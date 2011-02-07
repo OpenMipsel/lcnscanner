@@ -112,12 +112,12 @@ class LCNScannerPlugin(Screen):
 					while i < len(self.lcnlist):
 						if self.lcnlist[i][0] == lcn.lcn:
 							if self.lcnlist[i][4] < db:
-								self.lcnlist[i][0] += 16384
+								self.lcnlist[i][0] = 16384 + self.lcnlist[i][0]
 							else:
 								newlcn += 16384
 							break
 						i += 1
-					self.lcnlist.append((newlcn, lcn.nid, lcn.tsid, lcn.sid, db))
+					self.lcnlist.append([newlcn, lcn.nid, lcn.tsid, lcn.sid, db])
 					lcn = lcn.next
 					count += 1
 
