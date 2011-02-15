@@ -204,7 +204,7 @@ def LCNScannerMain(session, **kwargs):
 	session.open(LCNScannerPlugin)
 	
 def LCNScannerSetup(menuid, **kwargs):
-	if menuid == "setup":
+	if menuid == "scan":
 		return [("LCN Scanner", LCNScannerMain, "lcnscanner", None)]
 	else:
 		return []
