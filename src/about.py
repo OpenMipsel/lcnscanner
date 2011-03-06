@@ -32,7 +32,7 @@ class LCNScannerAbout(Screen):
 		self["key_green"] = Button("")
 		self["key_yellow"] = Button("")
 		self["key_blue"] = Button("")
-		self["about"] = Label("SIFTeam LCN scanner 1.0\n\nCredits:\nSandro Cavazzoni aka skaman (main coder)\nMorpheus (consultant about e2 settings and beta tester)\nTideglo (original idea and beta tester)\nGenge (beta tester)\nIppe (beta tester)\nKatapip (beta tester)\nTHESEVEN (beta tester)\nMargy82 (beta tester)")
+		self["about"] = Label("SIFTeam LCN scanner 2.0\n\nCredits:\nSandro Cavazzoni aka skaman (main coder)\nMorpheus (consultant about e2 settings and beta tester)\nTideglo (original idea and beta tester)\nGenge (beta tester)\nIppe (beta tester)\nKatapip (beta tester)\nTHESEVEN (beta tester)\nMargy82 (beta tester)")
 		self["actions"] = ActionMap(["SetupActions", "ColorActions"],
 		{
 			"red": self.quit,
