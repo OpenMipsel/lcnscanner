@@ -274,7 +274,7 @@ class LCNBuildHelper():
 
 class LCNScannerPlugin(Screen, ConfigListScreen, LCNBuildHelper):
 	skin = """
-		<screen position="360,150" size="560,400" title="SIFTeam LCN">
+		<screen position="center,center" size="560,400" title="SIFTeam LCN">
 			<widget name="config" position="5,5" size="550,350" scrollbarMode="showOnDemand" zPosition="1"/>
 
 			<widget name="key_red" position="0,360" size="140,40" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18"/>
